@@ -89,10 +89,13 @@ Bur if it's just a generic vector in some space and you don't know what they act
 #### Setting Hyperparameters
 Idea #1 : Choose hyperparameters that work best on the data
 > BAD. e.g., K=1 always works perfectly on training data.
+
 Idea #2 : Split data into train and test, choose hyperparameters that work best on test data
 > BAD. No idea to how algorithm will perform on new data. performance on this test set will no longer be representative of our performance of new, unseen data.
+
 Idea #3 : Split data into `train`, `val`, and `test`; choose hyperparameters on val and evaluate on test
 > BETTER. Train algorithm with many different choices of hyperparameters on the training set, evaluate on the validation set, and now pick the set of hyperparameters which performs best on the validation set. 
+
 Idea $4 : Cross-Validation : Split data(without test data) into `folds`, try each fold as validation and average the results
 > Useful for small datasets, but not used too frequently in deep learning
 

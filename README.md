@@ -5,43 +5,17 @@
 
 | 주차 | 내용             | 발표자                               | 발표자료 |
 | ---- | ---------------- | ------------------------------------ | -------- |
+| 1    | cs231n 1주차     | 강다연(통계), 김연수, 나정현                 | [📚](https://github.com/Ewha-Euron/Euron-AI-2021/blob/master/Week_1%20%EB%B0%9C%ED%91%9C%20%EC%9E%90%EB%A3%8C.pdf)    |
 | 2    | cs231n 2주차     | 박가현, 황시은                       | [📚](https://github.com/Ewha-Euron/Euron-AI-2021/blob/master/Week_2%20%E1%84%87%E1%85%A1%E1%86%AF%E1%84%91%E1%85%AD%20%E1%84%8C%E1%85%A1%E1%84%85%E1%85%AD.pdf)    |
-
-
-
-## Requirements
-
-❗️Local Environment (Jupyter Notebook) 가 아닌  `Google Colab` 을 이용해주세요. ( 미리 설치하실 것은 따로 없으며, Assignment 절차를 따라주시면 됩니다. )
-
-<img width="848" alt="Screenshot 2021-03-21 at 19 53 57" src="https://user-images.githubusercontent.com/49134038/111903237-9086c680-8a84-11eb-8652-19a7668d106a.png">
-
-* 1주차 과제 시 업로드 했던 구글 드라이브의 assignment1을 이용합니다.
-
-
-
-## Assignment
-
-* https://cs231n.github.io/assignments2020/assignment1/ 의 `Q1: k-Nearest Neighbor classifier (20 points)` 을 완료해주세요.
-
-  💥 **Submission**
-
-
-
-## Submission
-
-> 명시된 파일을 구글 드라이브에서 다운받아 해당 `Week_2`  branch에 업로드하신 후 `pull request` 를 진행해주세요.
-
-
-
-1. `knn.ipynb` 을 완료하신 후, `.py` 파일로 변환해서 제출해주세요. (모든 cell을 하나의 py 파일에 합쳐주세요)
-
-2. `k_nearest_neighbor.py` 을 제출해주세요.
-
-
-
-## Extra-Credit
-
-* https://github.com/deeplearningzerotoall
-
-  * `lab-02` ~ `lab-05` 을 진행해주세요.
-
+| 3    | cs231n 3주차     | 장세영, 조송희                       | [📚]()    |
+| 4    | cs231n 4주차     | 이선민, 김지수                       | [📚]()    |
+| 5    | cs231n 5주차     | 강다연(컴공), 김지인                 | [📚]()    |
+| 6    | cs231n 6주차     | 장예서, 구미진                       | [📚]()    |
+| 7    | cs231n 7주차     | 장세영, 황시은                       | [📚]()    |
+| 8    | cs231n 8주차     | 조송희, 김지수                       | [📚]()    |
+| 9    | cs231n 9주차     | 이선민, 박가현                       | [📚]()    |
+| 10   | cs231n 10주차    | 강다연(컴공), 장예서                 | [📚]()    |
+| 11   | cs231n 11-12주차 | 김지인, 구미진, 황시은, 조송희       | [📚]()    |
+| 12   | cs231n 13-14주차 | 박가현, 장세영, 구미진, 김지인       | [📚]()    |
+| 13   | cs231n 15-16주차 | 이선민, 강다연(컴공), 장예서, 김지수 | [📚]()    |
+| 14   | 논문 스터디      | -                                    | [📚]()    |

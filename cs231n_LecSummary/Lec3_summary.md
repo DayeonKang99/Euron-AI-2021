@@ -127,7 +127,7 @@ And because the gradient is linear operator, when you actually try to compute th
 for each of the individual terms. → super slow\
 ✔︎ We use SGD<br><br>
 `Stochastic Gradient Descent (SGD)`\
-: at every iteration, we sample some small set of training examples, called a minibatch. \ 
+: at every iteration, we sample some small set of training examples, called a minibatch.  
 32 / 64 / 128 common \
 We'll use this small minibatch to compute an estimate of the full sum, and an estimate of the true gradient.
 ``` python

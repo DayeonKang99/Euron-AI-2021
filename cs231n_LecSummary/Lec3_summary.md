@@ -16,7 +16,8 @@ Loss over the dataset is a sum of loss over examples :\
 <img width="353" alt="스크린샷 2021-04-04 오후 6 45 03" src="https://user-images.githubusercontent.com/67621291/113504844-df992500-9575-11eb-809e-0da90e06b2e7.png">
 > The graph of x-axis is *Sy_i*, y-axis is loss
 
-As the score for the true category increases, then the loss will go down linearly until we get to above this safety margin. \After the loss will be zero because
+As the score for the true category increases, then the loss will go down linearly until we get to above this safety margin. \
+After the loss will be zero because
 we've already correctly classified this example. <br><br>
 **Example**\
 <img width="350" alt="스크린샷 2021-04-04 오후 7 01 32" src="https://user-images.githubusercontent.com/67621291/113505178-2e47be80-9578-11eb-961b-4b73dcada408.png">

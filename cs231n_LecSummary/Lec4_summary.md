@@ -1,8 +1,8 @@
 # Backpropagation and Neural Networks
 ### Computational Graph
 <img width="500" alt="스크린샷 2021-05-02 오후 7 04 11" src="https://user-images.githubusercontent.com/67621291/116809483-309e3800-ab79-11eb-8f6e-3e33a3d8add9.png">\
-Useful for 'Convolutional network (AlexNet)', 'Neural Turing Machine'
-<br><br>
+Useful for 'Convolutional network (AlexNet)', 'Neural Turing Machine' <br><br>
+
 ## Backpropagation
 Break down given f into computational nodes using computational graph. Then you can work with gradients of very simple computations. \
 → Use 'Chain Rule' and get value of gradient<br>
@@ -18,8 +18,8 @@ Direction : end of graph → beginning. <br><br>
 <img width="500" alt="스크린샷 2021-05-02 오후 8 18 38" src="https://user-images.githubusercontent.com/67621291/116811296-98f21700-ab83-11eb-99db-ee39d5295621.png"><br><br>
 #### *Example of Backpropagation and Apply Sigmoid*
 <img width="250" alt="스크린샷 2021-05-02 오후 8 21 24" src="https://user-images.githubusercontent.com/67621291/116811379-f8e8bd80-ab83-11eb-8b39-e04ee3cf6670.png">
-<img width="650" alt="스크린샷 2021-05-02 오후 8 21 48" src="https://user-images.githubusercontent.com/67621291/116811391-0736d980-ab84-11eb-86ac-f710c2072fcb.png">
-<br><br>
+<img width="650" alt="스크린샷 2021-05-02 오후 8 21 48" src="https://user-images.githubusercontent.com/67621291/116811391-0736d980-ab84-11eb-86ac-f710c2072fcb.png"<br><br>
+
 ### Pattern in backward flow
 **Add** gate : gradient distributor. pass same thing to both of the branches that were connected.\
 **Max** gate : gradient router. one gets the full value of the gradient just passed back, and the other one will have a gradient of zeor.\

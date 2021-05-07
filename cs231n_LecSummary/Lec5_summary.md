@@ -27,7 +27,7 @@ Fukushima 1980: Neurocognitron. network architecture
 > complex cells: perform pooling
 
 LeCun 1998: Gradient-based learning applied to document recognition\
-Alec Krizhevsky 2012: gave motern incarnation of Convolution Neural Networks. large amount of data is available<br><br>
+Alex Krizhevsky 2012: gave motern incarnation of Convolution Neural Networks. large amount of data is available<br><br>
 ### ConvNets are everywhere
 image classification, image retrieval, detection, segmentation, face-recognition, classifyt videos, pose recognition, game playing, interpretation and diagnosis 
 of medical images, street sign recognition, aerial maps, image captioning \

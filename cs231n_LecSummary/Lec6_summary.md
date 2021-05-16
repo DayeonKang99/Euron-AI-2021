@@ -83,7 +83,7 @@ e.g. consider CIFAR-10 example with [32, 32, 3] images
 - Subtract per-channel mean (e.g. VGGNet) <br>mean along each channel = 3 numbers
 
 **do the same thing at test time** for this array that you determined at training time
-<br><br>
+<br><br><br>
 
 ## Weight Initialization
 `Q)` What happens when W = 0 init is used?<br>
@@ -132,7 +132,7 @@ Usually inserted after Fully Connected or Convolutional layers, and before nonli
 **Note: at test time BatchNorm layer fuctions differently**: <br>
 The mean/std are not computed based on the batch. Instead, a single fixed empirical mean of activations during training is used.<br>don't re-compute at test time. 
 estimate at training time, and then use this at test time
-<br><br>
+<br><br><br>
 
 ## Babysitting the Learning Process
 Step 1: Preprocess the data<br>
@@ -159,3 +159,28 @@ Second stage: longer running time, finer search<br>
 Tip for detecting explosions(NaN) in the solver:<br>
 If the cost is ever > 3 * original cost, break out early
 <br><br>
+### Random Search vs. Grid Search
+<img width="500" alt="스크린샷 2021-05-17 오전 12 31 00" src="https://user-images.githubusercontent.com/67621291/118402952-29157d80-b6a7-11eb-83ec-62b888149a07.png">\
+green fuction showing where good values are<br>
+grid는 3개의 점 밖에 없어 good region이 어디인지 놓침<br>
+much more useful signal overall since we have more samples of different values of the important variable
+<br><br>
+### Hyperparameters to play with:
+- network architecture
+- learning rate, its decay schedule, update type
+- regularization (L2 / Dropout strength)
+<br><br>
+### Monitor and visualize the loss curve
+<img width="700" alt="스크린샷 2021-05-17 오전 12 39 45" src="https://user-images.githubusercontent.com/67621291/118403215-62022200-b6a8-11eb-8b36-2e9d1d640dec.png">
+<br>
+<img width="400" alt="스크린샷 2021-05-17 오전 12 46 42" src="https://user-images.githubusercontent.com/67621291/118403451-5e22cf80-b6a9-11eb-81bf-37a72fa05313.png">
+<br>
+
+### Monitor and visualize the accuracy
+<img width="700" alt="스크린샷 2021-05-17 오전 12 43 42" src="https://user-images.githubusercontent.com/67621291/118403334-ef457680-b6a8-11eb-9565-c62cd03f0272.png">
+<br>
+
+### Track the ratio of weight updates / weight magnitudes
+ratio between the updates and values: ~0.0002 / 0.02 = 0.01 (about okay)<br>
+want this to be somewhere around 0.001 or so<br>
+너무 크거나 작게 update되면 안됨

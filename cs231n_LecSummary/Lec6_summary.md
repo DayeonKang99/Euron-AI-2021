@@ -137,7 +137,7 @@ estimate at training time, and then use this at test time
 ## Babysitting the Learning Process
 Step 1: Preprocess the data<br>
 Step 2: Choose the architecture<br> 
-> Double check that the loss is reasonable
+> Double check that the loss is reasonable<br>
 > zero regularization의 loss 보다 crank up regularization에서의 loss가 더 커야함
 
 Step 3: Try to train<br> 

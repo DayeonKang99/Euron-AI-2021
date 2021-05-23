@@ -87,3 +87,30 @@ Des not form/store the full inverse Hessian<br>It does not work too well for man
 We really care about reducing gap between train and test error<br>
 
 ### Model Ensembles 
+1. Train multiple independent models
+2. At test time average their results
+
+2% extra performance <br><br>
+**Tips and Tricks**<br>
+- Instead of training independent models, use multiple snapshots of a single model during training 
+- Instead of using actual parameter vector, keep a moving average of the parameter vector and use that at test time (Polyak averaging)
+
+<br><br>
+How to improve single-model performance?<br>
+➡️ Regularization
+<br><br>
+
+### Regularization: Add term to loss 
+<img width="600" alt="스크린샷 2021-05-23 오후 11 51 50" src="https://user-images.githubusercontent.com/67621291/119265469-da755f80-bc21-11eb-86b7-fe035083ab6d.png">
+<br>
+
+### Regularization: Dropout
+In each forward pass, randomly set some neurons to zero <br>Probability of dropping is a hyperparameter; 0.5 is common<br>
+<img width="450" alt="스크린샷 2021-05-23 오후 11 55 44" src="https://user-images.githubusercontent.com/67621291/119265650-65eef080-bc22-11eb-910e-3222766f6094.png">
+<img width="500" alt="스크린샷 2021-05-24 오전 12 04 44" src="https://user-images.githubusercontent.com/67621291/119265933-a733d000-bc23-11eb-9a00-682f9aca7dec.png"><br><br>
+Forces the network to have a redundant representation;<br>Prevents co-adaptationn of features<br><br>
+Another interpretation: <br>Dropout is training a large **ensenble** of models (that share parameters) <br>Each binary mask is one model<br><br>
+#### Dropout: Test time
+<img width="300" alt="스크린샷 2021-05-24 오전 12 53 59" src="https://user-images.githubusercontent.com/67621291/119267652-87ec7100-bc2a-11eb-888c-bc7d3a252f58.png"><br><br>
+<img width="650" alt="스크린샷 2021-05-24 오전 12 57 29" src="https://user-images.githubusercontent.com/67621291/119267791-06491300-bc2b-11eb-985e-29cf1b022bf7.png">
+

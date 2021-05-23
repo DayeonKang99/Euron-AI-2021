@@ -81,7 +81,7 @@ instead of inverting the Hessian (O(n^3)), approximate inverse Hessian with rank
 <br>
 #### L-BFGS (Limited memory BFGS)
 Des not form/store the full inverse Hessian<br>It does not work too well for many deep learning problems
-<br><br>
+<br><br><br>
 
 ## Beyond Training Error
 We really care about reducing gap between train and test error<br>
@@ -113,4 +113,49 @@ Another interpretation: <br>Dropout is training a large **ensenble** of models (
 #### Dropout: Test time
 <img width="300" alt="스크린샷 2021-05-24 오전 12 53 59" src="https://user-images.githubusercontent.com/67621291/119267652-87ec7100-bc2a-11eb-888c-bc7d3a252f58.png"><br><br>
 <img width="650" alt="스크린샷 2021-05-24 오전 12 57 29" src="https://user-images.githubusercontent.com/67621291/119267791-06491300-bc2b-11eb-985e-29cf1b022bf7.png">
+<br><br>
+**Summary**<br>
+<img width="700" alt="스크린샷 2021-05-24 오전 1 05 13" src="https://user-images.githubusercontent.com/67621291/119268051-19a8ae00-bc2c-11eb-90c6-098416acb0c1.png">
+<br><br>
 
+#### More common: Inverted Dropout
+<img width="700" alt="스크린샷 2021-05-24 오전 1 06 16" src="https://user-images.githubusercontent.com/67621291/119268081-4066e480-bc2c-11eb-91fa-22a4fafd0ac4.png">
+<br>
+
+### Regularization: Data Augmentation
+Randomly transfrom the image, and train
+- Horizontal flips
+- Random crops and scales
+- Color jitter 
+- ...
+
+<br>
+
+### Regularization: A common pattern
+**Training**: Add some kind of randomness<br>
+**Testing**: Average out randomness (sometimes approximate)<br><br>
+Batch Normalization - regularization pattern 가짐<br>
+**Training**: Normalize using stats from random minibatches<br>
+**Testing**: Use fixed stats to normalize<br>
+→ batch normalization 사용하면 dropout 사용하지 않음
+<br>
+
+#### Examples:
+- Dropout
+- Batch Normalization
+- Data Augmentation
+- DropConnect 
+- Fractional Max Pooling
+- Stochastic Depth
+
+<br><br>
+
+## Transfer Learning
+CNN을 사용하려면 data가 많아야한다 → ❌ **BUSTED**<br><br>
+<img width="800" alt="스크린샷 2021-05-24 오전 1 32 22" src="https://user-images.githubusercontent.com/67621291/119268882-e536f100-bc2f-11eb-9d33-3668bfa1349a.png"><br><br>
+<img width="400" alt="스크린샷 2021-05-24 오전 1 34 34" src="https://user-images.githubusercontent.com/67621291/119268960-33e48b00-bc30-11eb-9359-c27cab814202.png"><br><br>
+**Transfer learning with CNNs is pervasive (it's the norm, not an exception)**<br>
+<img width="700" alt="스크린샷 2021-05-24 오전 1 40 32" src="https://user-images.githubusercontent.com/67621291/119269120-09470200-bc31-11eb-8b21-910304425b2d.png">
+<br><br><br>
+large data set을 가지고 있지 않으면 <br>→ download some pretrained model that's relatively close to the task you care about, and then either reinitialize parts of that model or fine tune that model for your data<br>
+Deep learning frameworks provide a "Model Zoo" of pretrained models so you don't need to train your own

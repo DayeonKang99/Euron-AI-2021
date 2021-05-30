@@ -47,7 +47,7 @@ RMSProp adjust its trajectory (SGD + Momentum은 overshooting 하는데 반해)
 
 ### Adam
 <img width="900" alt="스크린샷 2021-05-23 오후 12 46 37" src="https://user-images.githubusercontent.com/67621291/119247497-ec74e500-bbc4-11eb-93a9-fb05a051d854.png">
-Bias correction for the fact that first and second moment estimates start at zero (→ first step이 매우 커지는 경우 발생)<br>
+Bias correction for the fact that first and second moment estimates start at zero (→ first step이 매우 커지는 경우 발생)<br><br>
 
 **Adam with beta1 = 0.9, beta2 = 0.999, <br>and learning_rate = 1e-3 or 5e-4<br>is a great starting point for many models!**<br><br>
 <img width="500" alt="스크린샷 2021-05-23 오후 12 52 16" src="https://user-images.githubusercontent.com/67621291/119247585-b6843080-bbc5-11eb-9b4f-d8999653af10.png">

@@ -53,8 +53,8 @@ def L_i_vectorized(x, y, W):
  <img width="200" alt="스크린샷 2021-04-04 오후 7 49 09" src="https://user-images.githubusercontent.com/67621291/113506294-d496c280-957e-11eb-9a5b-1554e216d316.png">
  <br><br>
  How is the classifier to choose btw these different versions of W that all achieve zero loss?
- → Really in practice, we don't actually care that much about fitting the training data. \We really care about the performance of this classifier on test data.\
- <img width="334" alt="스크린샷 2021-04-04 오후 7 54 16" src="https://user-images.githubusercontent.com/67621291/113506384-8afaa780-957f-11eb-8110-488b92aee010.png">\
+ → Really in practice, we don't actually care that much about fitting the training data. \We really care about the performance of this classifier on test data.<br>
+ <img width="334" alt="스크린샷 2021-04-04 오후 7 54 16" src="https://user-images.githubusercontent.com/67621291/113506384-8afaa780-957f-11eb-8110-488b92aee010.png"><br>
  > ● is training data, ■ is new data. Green line is prefered.
  
  <br><br>

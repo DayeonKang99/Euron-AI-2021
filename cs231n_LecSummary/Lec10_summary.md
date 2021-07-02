@@ -10,7 +10,7 @@ x가 input으로 들어오고 RNN은 internal hidden state를 가지고 있어 u
 additional fully connected layer가 every time step마다 ht를 읽어서 output을 produce<br>
 **Notice:** the same function and the same set of parameters are used at every time step <br><br>
 
-### Vanulla Recurrent Neural Network
+### Vanilla Recurrent Neural Network
 <img width="400" alt="스크린샷 2021-07-01 오전 10 47 17" src="https://user-images.githubusercontent.com/67621291/124052593-b5aeac00-da59-11eb-9e05-545522e6358c.png"><br>
 <br>
 ### Computational Graph

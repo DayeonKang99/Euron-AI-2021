@@ -3,7 +3,7 @@ What's going on inside ConvNets?<br><br>
 
 ## Visualize Filters 
 **First layer**<br>
-<img width="739" alt="스크린샷 2021-07-11 오후 3 32 21" src="https://user-images.githubusercontent.com/67621291/125185034-32f9ce00-e25d-11eb-844b-0d1fa3ad4d73.png"><br>
+<img width="600" alt="스크린샷 2021-07-11 오후 3 32 21" src="https://user-images.githubusercontent.com/67621291/125185034-32f9ce00-e25d-11eb-844b-0d1fa3ad4d73.png"><br>
 convolution layer. visualize weights <br><br>
 <img width="550" alt="스크린샷 2021-07-11 오후 3 47 47" src="https://user-images.githubusercontent.com/67621291/125185344-59b90400-e25f-11eb-817f-d8f636915c00.png"><br><br>
 **Last layer**<br>

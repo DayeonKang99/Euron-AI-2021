@@ -19,7 +19,7 @@
 
 
 ## Assignment
-- None.
+- None
 
 <br />
 

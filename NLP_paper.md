@@ -66,7 +66,7 @@ PBSMT - Phrase-Based Statistical Machine Translation: perform well on low-resour
 ### Initialization
 populate the initial phrase tables <br>
 Phrase tables are populated with the scores of the translation of a source word to:<br>
-<img width="221" alt="스크린샷 2021-08-01 오후 11 04 07" src="https://user-images.githubusercontent.com/67621291/127773733-244e0e18-eecb-41bd-a5dd-539b352a6bcc.png">
+<img width="300" alt="스크린샷 2021-08-01 오후 11 04 07" src="https://user-images.githubusercontent.com/67621291/127773733-244e0e18-eecb-41bd-a5dd-539b352a6bcc.png">
 
 ### Language Modeling
 Both in the source and target domains we learn smoothed n-gram language models using KenLM
